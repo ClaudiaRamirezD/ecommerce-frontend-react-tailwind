@@ -31,7 +31,7 @@ export default () => {
         <img
           src={Array_imgs[index]}
           alt=""
-          className="aspect-[16/12] md:rounded-md"
+          className="aspect-[16/13] w-full md:rounded-md md:aspect-[16/18] "
         />
         <div className="absolute top-1/2 flex w-full -translate-y-1/2 justify-between px-4">
           <button

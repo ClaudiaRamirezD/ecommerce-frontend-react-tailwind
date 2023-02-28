@@ -13,7 +13,9 @@ const MainHeader = () => {
     );
 
     const handleOpenMenu = () => {
-       setNavClass("absolute md:static md:p-0  top-0 left-0 h-full p-8 font-bold bg-white flex flex-col md:flex-row  md:mr-auto md:flex md:gap-4 md:h-auto")
+       setNavClass(
+         "absolute md:static md:p-0  top-0 left-0 h-full p-8 font-bold bg-white flex flex-col md:flex-row  md:mr-auto md:flex md:gap-4 md:h-auto z-10"
+       );
     };
 
     const handleCloseMenu = () => {
@@ -24,7 +26,7 @@ const MainHeader = () => {
 
     return (
       <>
-        <header className="container mx-auto flex items-center gap-8 p-4">
+        <header className=" container mx-auto flex items-center gap-8 p-4">
           <button className="md:hidden" onClick={handleOpenMenu}>
             <MenuIcon />
           </button>
